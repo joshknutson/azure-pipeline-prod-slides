@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Azure Pipelines</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Azure Pipelines</h1>
+					<img class="stretch" src="assets/bomb.png" />
+				</section>
+				<section>
+					<h3>Josh Knutson</h3>
+					<ul>
+						<li>Software Developer 4</li>
+						<li>@ Imagtrend for 15+ years</li>
+						<li>Working in CF, JS, CSS, .NET, React and anything else requested</li>
+					</ul>
+				</section>
+				
+				
+				<section>
+					<h2>Execution Hierarchy</h2>
+					<ol>
+						
+						<li>Execution hierarchy in a YAML pipeline
+							<ul>
+							<li>YAML Pipeline
+							
+								<ul>
+										<li>Stages
+											<ul><li>Jobs
+												<ul><li>Steps
+										
+												</li></ul>
+											</li></ul>
+										</li></ul>
+							
+							
+							</li>
+							<li>Every Pipeline has at least one stage on one job even if you don't explicity define them</li>
+							<li>By default, everything executes sequentially, in the order defined</li>
+							<li>Conditional Execution is possible</li>
+							<li>Dependencies can be explicity specified</li>
+							
+							</ul>
+						</li>
+						
+						
+					</ol>
+				
+				</section>
+				<section>
+					<h3>Show and Tell Time</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
